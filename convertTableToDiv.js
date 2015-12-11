@@ -22,7 +22,7 @@ $.fn.convertTableToDiv = function() {
 
             // Let's create the html for the group.
             // 1. the wrapper div. Yeah, we'll use the cell classes here.
-            this_cell_class = this_cell.attr('class') === undefined) ? '' : this_cell.attr('class');;
+            this_cell_class = (this_cell.attr('class') === undefined) ? '' : this_cell.attr('class');;
             group_html = '<div class="' + this_cell_class + '">';
             // 2. next,the label. We'll use the corresponding table head value.
             group_html += '<span class="table-group-entry-label">' + this_table.find('thead th').eq(j).text() + '</span>';
